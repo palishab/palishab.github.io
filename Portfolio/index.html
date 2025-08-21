@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Hero Section -->
+  <header class="hero">
+    <div class="hero-content">
+      <img src="profile.jpeg" alt="Your Photo" class="profile-pic">
+      <h1>Palisha Bajracharya</h1>
+      <p class="tagline">Data & Business Analyst | Visual Storyteller</p>
+    </div>
+  </header>
+
+  <!-- About Section -->
+  <section class="about">
+    <h2>About Me</h2>
+    <p>
+      Business Analytics graduate from the University of Michigan – Ross School of Business with expertise in data visualization, dashboard development, and data consulting. Passionate about transforming data into insights and solutions that drive smarter decisions.<br>
+ <a href="about.html" class="btn">Learn More About Me</a>
+    </p>
+  </section>
+
+  <!-- Projects Section -->
+<section class="projects">
+  <h2>Projects</h2>
+  
+  <div class="project-carousel">
+    <button class="scroll-btn left" onclick="scrollProjects(-1)">&#10094;</button>
+    
+    <div class="project-container" id="projectContainer">
+      <div class="project-card">
+        <h3>Tableau Dashboards</h3>
+        <p>Developed interactive KPI and performance dashboards in Tableau, turning complex data into clear visual insights to support decision-making.</p>
+        <a href="https://public.tableau.com/app/profile/palishab" target="_blank">View Projects</a>
+      </div>
+      <div class="project-card">
+        <h3>GitHub Repo</h3>
+        <p>Built and maintained a collection of programming and data projects on GitHub, showcasing skills in coding, analysis, and problem-solving.</p>
+        <a href="https://github.com/palishab" target="_blank">View Projects</a>
+      </div>
+      <div class="project-card">
+        <h3>Explainer Videos</h3>
+        <p>Created animated explainer videos with Toonly, simplifying big ideas into engaging visuals that effectively communicated project goals.</p>
+        <a href="https://www.youtube.com/watch?v=jjSYhv7fGcI" target="_blank">Watch Videos</a>
+      </div>
+	<div class="project-card">
+        <h3>HCI Dissertation</h3>
+        <p>Conducted research on Human-Computer Interaction for my dissertation, analyzing its impact on digital retail experience and behavior.</p>
+        <a href="http://dx.doi.org/10.13140/RG.2.2.32649.15204" target="_blank">View Project</a>
+      </div>
+	<div class="project-card">
+        <h3>Smart Dustbin with IoT</h3>
+        <p>Designed and implemented an IoT-enabled dustbin with sensors, enabling automatic lid control and real-time SMS alerts when the bin is full.</p>
+        <a href="https://www.youtube.com/watch?v=jjSYhv7fGcI" target="_blank">Watch Video</a>
+      </div>
+	<div class="project-card">
+        <h3>3D Designing Projects</h3>
+        <p>Modeled and developed 3D prototypes in Tinkercad for IoT projects, contributing to research experiments and innovative design solutions.</p>
+        <a href="https://www.tinkercad.com/users/2SthEoj4DFk" target="_blank">View Projects</a>
+      </div>
+      <!-- Add more projects as needed -->
+    </div>
+    
+    <button class="scroll-btn right" onclick="scrollProjects(1)">&#10095;</button>
+  </div>
+</section>
+
+
+<div class="site-footer">
+<!-- Contact Section -->
+  <section class="contact">
+    <h2>Contact Me</h2>
+    <p>Email: <a href="mailto:palibaj@gmail.com">palibaj@gmail.com</a></p>
+    <p>LinkedIn: <a href="https://www.linkedin.com/in/palishab/" target="_blank">linkedin.com/in/palishab/</a></p>
+   <br>
+  </section>
+  <p>© 2025 Palisha Bajracharya. All rights reserved.</p>
+</div>
+
+<script>
+  function scrollProjects(direction) {
+    const container = document.getElementById("projectContainer");
+    const cardWidth = container.querySelector(".project-card").offsetWidth + 16; // width + gap
+    container.scrollBy({
+      left: direction * cardWidth,
+      behavior: "smooth"
+    });
+  }
+</script>
+</body>
+</html>
+
+  
+</body>
+</html>

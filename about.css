@@ -1,0 +1,188 @@
+body {
+  font-family: Arial, sans-serif;
+  background: linear-gradient(135deg, #e07a5f, #3d5a80);
+  margin: 0;
+  padding: 0;
+}
+
+.about-container {
+  max-width: 900px;
+  margin: 50px auto;
+  padding: 0 20px;
+}
+
+/* Profile Section */
+.profile-intro {
+  display: flex;
+  align-items: center;
+  gap: 25px;
+  margin-bottom: 50px;
+}
+
+.profile-pic {
+  width: 150px;
+  height: 200px; /* vertical style */
+  object-fit: cover;
+  border-radius: 15px;
+  box-shadow: 0 8px 25px rgba(0,0,0,0.2);
+}
+
+.intro-text h1 {
+  color: #fff;
+  margin: 0 0 10px 0;
+}
+
+.intro-text p {
+  color: #f0f0f0;
+  line-height: 1.6;
+}
+
+/* Card styles */
+.card {
+  background: #fff;
+  border-radius: 15px;
+  padding: 30px;
+  margin-bottom: 30px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 25px rgba(0,0,0,0.15);
+}
+
+.card h2 {
+  color: #e07a5f;
+  margin-bottom: 15px;
+}
+
+/* Skills & Languages layout */
+.skills-languages {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.skills-languages > div {
+  flex: 1;
+  min-width: 250px;
+}
+
+/* Skill bars */
+.skill-bar {
+  background: #ddd;
+  border-radius: 20px;
+  margin: 10px 0;
+  height: 20px;
+  overflow: hidden;
+}
+
+.skill-bar span {
+  display: block;
+  height: 100%;
+  background: #3d5a80; /* dark blue */
+  border-radius: 20px;
+  line-height: 20px;
+  color: #fff;
+  padding-left: 10px;
+  font-size: 14px;
+  transition: width 1s ease-in-out;
+}
+
+/* Timeline style */
+.timeline {
+  list-style: none;
+  padding-left: 0;
+}
+
+.timeline li {
+  position: relative;
+  padding-left: 15px;
+  margin-bottom: 15px;
+}
+
+.timeline li::before {
+  content: "•";
+  color: #e07a5f;
+  position: absolute;
+  left: 0;
+}
+
+.school {
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+  gap: 10px; /* space between logo and text */
+}
+
+.school-logo {
+  width: 25px; /* small but visible */
+  height: auto; /* maintain aspect ratio */
+}
+
+.language-pills {
+  display: flex;
+  flex-wrap: wrap;        /* wrap pills to next line if needed */
+  gap: 10px;              /* space between pills */
+  margin-top: 10px;
+}
+
+.pill {
+  background: #e07a5f;    /* coral color */
+  color: #fff;
+  padding: 6px 15px;
+  border-radius: 25px;    /* pill shape */
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+  gap: 6px;               /* space between flag and text */
+  transition: transform 0.2s, box-shadow 0.2s;
+  cursor: default;
+}
+
+.pill:hover {
+  transform: translateY(-3px);      /* slight lift on hover */
+  box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+}
+
+.flag {
+  width: 18px;      /* small but visible */
+  height: 18px;
+  object-fit: cover;
+  border-radius: 3px; /* optional rounded corners */
+}
+
+.interest-pills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.interest-pills .pill {
+  background: #3d5a80; /* darker blue for variety */
+  color: #fff;
+  padding: 6px 15px;
+  border-radius: 25px;
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.intro-card {
+  max-width: 66%; /* makes it stretch almost full width */
+  width: 1000px;  /* adjust this value to match the white card width */
+  margin: 0 auto; /* centers it */
+  padding: 20px;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 10px;
+  text-align: left;
+  line-height: 1.5;
+  font-size: 16px;
+ 
+
+  /* This helps reduce unnecessary height */
+  display: inline-block; 
+}

@@ -12,30 +12,64 @@ body {
 }
 
 /* Profile Section */
-.profile-intro {
+.profile-wrapper {
   display: flex;
-  align-items: center;
-  gap: 25px;
-  margin-bottom: 50px;
+  align-items: flex-start;   /* align top of image with text */
+  gap: 25px;                 /* spacing between photo and card */
+  margin-bottom: 30px;
+  flex-wrap: wrap;           /* 🔥 allows image + text to stack on smaller screens */
 }
 
+/* photo stays standalone */
 .profile-pic {
-  width: 150px;
-  height: 200px; /* vertical style */
+  width: 100%;
+  height: 280px;
+  max-width:220px;
   object-fit: cover;
   border-radius: 15px;
   box-shadow: 0 8px 25px rgba(0,0,0,0.2);
 }
 
+@media (max-width: 600px) {
+  .profile-pic {
+    max-width: 150px;  /* smaller cap on phones */
+  }
+
+  .profile-wrapper {
+    justify-content: center; /* centers when stacked */
+  }
+}
+
+
+/* card only for the text */
+.profile-intro {
+  flex: 1; /* let it expand */
+  border-radius: 15px;
+  padding: 30px;
+  box-shadow: 0 8px 8px rgba(0,0,0,0.1);
+  background: transparent; 
+  border: 1px solid rgba(255, 255, 255, 0.15); /* subtle border */
+}
+
 .intro-text h1 {
   color: #fff;
-  margin: 0 0 10px 0;
+  margin: 0 0 15px 0;
 }
 
 .intro-text p {
   color: #f0f0f0;
   line-height: 1.6;
+  font-size: 1.05rem;
+  text-align: justify;
 }
+
+
+.section-container {
+  max-width: 1100px;  /* keeps content centered and narrower */
+  margin: 0 auto;     /* centers horizontally */
+  padding: 0 20px;    /* space from browser edge */
+}
+
 
 /* Card styles */
 .card {
